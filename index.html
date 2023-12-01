@@ -11,6 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
     <!-- get bootstrap -->
     <link
       rel="stylesheet"
@@ -34,7 +42,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link href="./style.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="./Ruby Rose.svg" />
+    <link rel="icon" type="image/svg+xml" href="./profile.jpeg" />
     <title>Autumn Lindberg Resume</title>
   </head>
   <body>
@@ -43,27 +51,27 @@
         <div id="home">
           <p class="eyebrow">Full Stack Web Developer</p>
           <h1 class="section-title">Autumn Valls</h1>
-          <div class="hero-banner">
+          <div class="hero-banner home-banner">
+            <div class="image-box">
+              <img src="profile.jpeg" alt="profile photo" class="profile" />
+            </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              dignissim convallis orci, a eleifend arcu iaculis ac. Nulla et
-              lectus ultricies, porta metus in, condimentum enim. Aenean nunc
-              turpis, accumsan quis justo ut, scelerisque vestibulum nulla. Nunc
-              quis eros vitae magna vestibulum faucibus.
+              Hard working, dedicated, and passionate about their craft. Autumn
+              thrives off of being challenged, and relishes every step of the
+              development process.
             </p>
           </div>
         </div>
         <!-- experience section -->
         <div id="industry-experience">
           <div class="hero">
-            <p class="eyebrow">summary</p>
-            <h1 class="section-title">About Autumn</h1>
+            <p class="eyebrow">Current & Past Jobs</p>
+            <h1 class="section-title">Inustry Experience</h1>
             <p class="summary">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               dignissim convallis orci, a eleifend arcu iaculis ac. Nulla et
               lectus ultricies, porta metus in, condimentum enim. Aenean nunc
-              turpis, accumsan quis justo ut, scelerisque vestibulum nulla. Nunc
-              quis eros vitae magna vestibulum faucibus.
+              turpis, accumsan quis justo ut, scelerisque vestibulum nulla.
             </p>
           </div>
           <div class="experience">
@@ -116,13 +124,7 @@
           <p class="eyebrow">Libraries, Languages, and Frameworks</p>
           <h1 class="section-title">Technical Proficiencies</h1>
           <div class="hero-banner">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              dignissim convallis orci, a eleifend arcu iaculis ac. Nulla et
-              lectus ultricies, porta metus in, condimentum enim. Aenean nunc
-              turpis, accumsan quis justo ut, scelerisque vestibulum nulla. Nunc
-              quis eros vitae magna vestibulum faucibus.
-            </p>
+            <p>- MERN - D3 - Bootstrap - CSS - Node - PHP</p>
           </div>
         </div>
 
@@ -131,13 +133,7 @@
           <p class="eyebrow">Workplace Interaction Skills</p>
           <h1 class="section-title">Soft Skills</h1>
           <div class="hero-banner">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              dignissim convallis orci, a eleifend arcu iaculis ac. Nulla et
-              lectus ultricies, porta metus in, condimentum enim. Aenean nunc
-              turpis, accumsan quis justo ut, scelerisque vestibulum nulla. Nunc
-              quis eros vitae magna vestibulum faucibus.
-            </p>
+            <p>- Collaborative coding - Client Interaction</p>
           </div>
         </div>
 
@@ -146,13 +142,8 @@
           <p class="eyebrow">Work Samples</p>
           <h1 class="section-title">Portfolio</h1>
           <div class="hero-banner">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              dignissim convallis orci, a eleifend arcu iaculis ac. Nulla et
-              lectus ultricies, porta metus in, condimentum enim. Aenean nunc
-              turpis, accumsan quis justo ut, scelerisque vestibulum nulla. Nunc
-              quis eros vitae magna vestibulum faucibus.
-            </p>
+            <p>Gallery style portfolio with bootstrap carousel</p>
+            <p>This lower p would be a div with info about the site</p>
           </div>
         </div>
 
@@ -178,37 +169,40 @@
           <!-- visually hidden and blank alts tell screen readers
              that icons are just decorative. Aria hidden is
              another indication just in case -->
-          <li>
+          <li class="home-link li-active">
             <p class="visually-hidden">Hero Banner</p>
             <a href="#home">
-              <i class="bi-house-door-fill h1" aria-hidden="true"></i
+              <i
+                class="bi-house-door-fill bi-house-door-fill-active h1"
+                aria-hidden="true"
+              ></i
             ></a>
           </li>
-          <li>
+          <li class="experience-link">
             <p class="visually-hidden">Industry Experience</p>
             <a href="#industry-experience">
               <i class="fas fa-brain h1" aria-hidden="true"></i
             ></a>
           </li>
-          <li>
+          <li class="proficiencies-link">
             <p class="visually-hidden">Technical Proficiencies</p>
             <a href="#proficiencies">
               <i class="bi-gear-wide-connected h1" aria-hidden="true"></i
             ></a>
           </li>
-          <li>
+          <li class="soft-skills-link">
             <p class="visually-hidden">Soft Skills</p>
             <a href="#soft-skills">
               <i class="bi-chat-dots-fill h1" aria-hidden="true"></i
             ></a>
           </li>
-          <li>
+          <li class="portfolio-link">
             <p class="visually-hidden">Portfolio</p>
             <a href="#portfolio">
               <i class="bi-brush-fill h1" aria-hidden="true"></i
             ></a>
           </li>
-          <li>
+          <li class="contact-link">
             <p class="visually-hidden">Contact</p>
             <a href="#contact">
               <i class="bi-envelope-fill h1" aria-hidden="true"></i

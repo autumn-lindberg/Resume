@@ -12,8 +12,10 @@
 
   /* font */
   --ff-base: "Outfit", sans-serif;
+  --ff-lato: "Lato", sans-serif;
 
   /* font weights */
+  --fw-thin: 100;
   --fw-regular: 300;
   --fw-semi-bold: 400;
   --fw-bold: 700;
@@ -118,6 +120,15 @@ aside {
 .bi-chat-dots-fill:hover,
 .bi-brush-fill:hover,
 .bi-envelope-fill:hover {
+  color: var(--clr-secondary-400);
+}
+/* active elements */
+.fa-brain-active,
+.bi-house-door-fill-active,
+.bi-gear-wide-connected-active,
+.bi-chat-dots-fill-active,
+.bi-brush-fill-active,
+.bi-envelope-fill-active {
   text-shadow: 0px 0px 2rem var(--clr-neutral-100);
 }
 
@@ -137,7 +148,42 @@ aside {
 }
 
 .summary {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.home-banner {
+  /* Thank you Mitchell Luo on Unsplash for the background photo */
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("test.jpg");
+  background-size: cover;
+  padding: 4.75rem 7rem 4rem 5rem;
+  margin-top: 1.5rem;
+  /* background-position: 0 50px; */
+  z-index: -2;
+  position: relative;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 100, 0.4);
+}
+
+.image-box {
+  flex-basis: 40%;
+  transform: translateY(-1rem);
+}
+.profile {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 15px var(--clr-primary-400);
+}
+
+.home-banner p {
+  flex-basis: 60%;
+  font-size: var(--fs-700);
+  font-family: var(--ff-lato);
+  font-weight: var(--fw-thin);
+  text-align: right;
 }
 
 #home,
@@ -146,8 +192,8 @@ aside {
 #soft-skills,
 #portfolio,
 #contact {
-  height: 100vh;
-  padding-top: 4rem;
+  min-height: 100vh;
+  padding-top: 3.5rem;
 }
 
 /* make job experience layout sideways */
@@ -234,6 +280,9 @@ aside {
   border-radius: 50%;
 }
 .icon-list > li:hover::before {
+  background: var(--clr-secondary-400);
+}
+.li-active::before {
   /*set a variable so dot position can be calculated */
   --_size: 0.5rem;
 
