@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
   softSkills = softSkills.offsetTop - offset;
   portfolio = portfolio.offsetTop - offset;
   contact = contact.offsetTop - offset;
+
+  // set display on tab content
+  const active = document.querySelector(".tab-link.active");
+  const content = document.querySelector(`.${active.id}`);
+  content.style.display = "flex";
 });
 
 document.addEventListener("scroll", () => {
@@ -149,4 +154,27 @@ document.addEventListener("scroll", () => {
     chatIcon.className = "bi-chat-dots-fill h1";
     brushIcon.className = "bi-brush-fill h1";
   }
+});
+
+const tabs = document.querySelectorAll(".tab-link");
+tabs.forEach((tab) => {
+  tab.addEventListener("click", (event) => {
+    const content = document.querySelectorAll(".tab-content");
+    // hide all tabs
+    content.forEach((c) => {
+      c.style.display = "none";
+    });
+    // remove active from all tabs
+    const tabs = document.querySelectorAll(".tab-link");
+    tabs.forEach((t) => {
+      t.className = t.className.replace(" active", "");
+      console.log(t.className);
+    });
+
+    // add active and show the tab that fired the event
+    const tabName = ".tab-content." + event.currentTarget.id;
+    const tabContent = document.querySelector(tabName);
+    tabContent.style.display = "flex";
+    event.currentTarget.className += " active";
+  });
 });
