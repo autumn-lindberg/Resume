@@ -2,7 +2,7 @@
 :root {
   /* color pallette */
   --clr-neutral-100: hsla(0, 0%, 100%, 1);
-  --clr-primary-800: hsla(229, 47%, 17%, 1);
+  --clr-primary-800: rgb(23, 30, 64);
   --clr-primary-700: hsla(228, 43%, 20%, 1);
   --clr-primary-400: hsla(230, 50%, 58%, 0.3);
   --clr-primary-300: hsla(229, 36%, 39%, 1);
@@ -165,7 +165,6 @@ aside {
   position: relative;
   box-shadow: inset 0 0 0 100vmax rgba(0, 0, 100, 0.4);
 }
-
 .image-box {
   flex-basis: 40%;
   transform: translateY(-1rem);
@@ -177,7 +176,6 @@ aside {
   overflow: hidden;
   box-shadow: 0 0 15px var(--clr-primary-400);
 }
-
 .home-banner p {
   flex-basis: 60%;
   font-size: var(--fs-700);
@@ -185,7 +183,6 @@ aside {
   font-weight: var(--fw-thin);
   text-align: right;
 }
-
 #home,
 #industry-experience,
 #proficiencies,
@@ -193,7 +190,7 @@ aside {
 #portfolio,
 #contact {
   min-height: 100vh;
-  padding-top: 3.5rem;
+  padding-top: 3rem;
 }
 
 /* make job experience layout sideways */
@@ -208,7 +205,6 @@ aside {
   /* space between entries and scroll bar */
   padding-bottom: 2rem;
 }
-
 /* change scroll bar look */
 .experience::-webkit-scrollbar {
   height: 0.75rem;
@@ -220,25 +216,84 @@ aside {
   background-color: var(--clr-accent-400);
   border-radius: 100vw;
 }
-
 .role {
   font-size: var(--fs-600);
   font-weight: var(--fw-bold);
 }
-
 .company {
   font-weight: var(--fw-semi-bold);
 }
-
 .year {
   color: var(--clr-accent-400);
 }
-
 .job {
   background-color: var(--clr-primary-800);
   padding: 2rem;
   border-radius: 0.25rem;
   width: 25rem;
+}
+
+.library-icon {
+  font-size: 4.5rem;
+}
+
+.tab-link {
+  width: 50%;
+}
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: #f1f1f1;
+}
+.tab button {
+  background-color: var(--clr-primary-800);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: ease-out 0.2s;
+  color: var(--clr-neutral-100);
+}
+.tab button:hover {
+  background-color: var(--clr-primary-300);
+  color: var(--clr-neutral-100);
+}
+.tab button.active {
+  background-color: var(--clr-primary-700);
+  color: var(--clr-neutral-100);
+  border: 2px solid var(--clr-neutral-100);
+  border-bottom: none;
+}
+.tab-content {
+  display: none;
+  padding: 6px 12px;
+  border: 2px solid var(--clr-neutral-100);
+  border-top: none;
+  align-items: center;
+}
+.tab-content.active {
+  display: block;
+}
+.text-side {
+  width: 70%;
+}
+.icon-side {
+  width: 30%;
+}
+.soft-skills-icon {
+  font-size: 5rem;
+}
+
+.carousel .carousel-item {
+  height: 73vh;
+}
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 73vh;
 }
 
 /* layout for nav */
