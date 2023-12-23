@@ -68,6 +68,19 @@ a:visited {
   color: var(--clr-neutral-100);
   text-decoration: none;
 }
+input,
+textarea {
+  font-size: 1.5rem !important;
+  background-color: var(--clr-primary-300) !important;
+}
+.btn-primary {
+  background-color: var(--clr-primary-300) !important;
+  color: var(--clr-neutral-100) !important;
+  border: var(--clr-primary-300) !important;
+}
+.btn-primary:hover {
+  background-color: var(--clr-secondary-400) !important;
+}
 
 /* for screen readers */
 .visually-hidden {
@@ -296,7 +309,20 @@ aside {
   min-height: 73vh;
 }
 
-/* layout for nav */
+/* contact page */
+/* Thank you Pawel Czerwinski on Unsplash for the background photo */
+.contact-page {
+  background-image: url("phone.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 50, 0.4);
+  transform: translateX(-4rem);
+  position: relative;
+  z-index: -1 !important;
+  background-position: -12rem 0;
+}
+
+/* layout fo */
 .icon-list {
   height: 100vh;
   border-left: 2px solid var(--clr-neutral-100);
