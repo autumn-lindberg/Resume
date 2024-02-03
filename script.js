@@ -45,7 +45,7 @@ document.addEventListener("scroll", () => {
   const brushIcon = document.querySelector(".bi-brush-fill");
   const envelopeIcon = document.querySelector(".bi-envelope-fill");
 
-  if (distFromTop >= 0 && distFromTop <= experience) {
+  if (distFromTop >= 0 && distFromTop <= portfolio) {
     if (!homeLink.className.includes("li-active")) {
       homeLink.className += " li-active";
     }
@@ -63,11 +63,29 @@ document.addEventListener("scroll", () => {
     chatIcon.className = "bi-chat-dots-fill h1";
     brushIcon.className = "bi-brush-fill h1";
     envelopeIcon.className = "bi-envelope-fill h1";
-  } else if (distFromTop > experience && distFromTop <= proficiencies) {
+  } else if (distFromTop > portfolio && distFromTop <= experience) {
+    if (!portfolioLink.className.includes("li-active")) {
+      portfolioLink.className += " li-active";
+    }
+    if (!brushIcon.className.includes("bi-brush-fill-active")) {
+      brushIcon.className += " bi-brush-fill-active";
+    }
+    // clear all classes
+    homeLink.className = "home-link";
+    proficienciesLink.className = "proficiencies-link";
+    softSkillsLink.className = "soft-skills-link";
+    experienceLink.className = "experience-link";
+    contactLink.className = "contact-link";
+    homeIcon.className = "bi-house-door-fill h1";
+    gearIcon.className = "bi-gear-wide-connected h1";
+    chatIcon.className = "bi-chat-dots-fill h1";
+    brainIcon.className = "fas fa-brain h1";
+    envelopeIcon.className = "bi-envelope-fill h1";
+  } else if (distFromTop > experience && distFromTop <= softSkills) {
     if (!experienceLink.className.includes("li-active")) {
       experienceLink.className += " li-active";
     }
-    if (!brainIcon.className.includes("fa-bran-active")) {
+    if (!brainIcon.className.includes("fa-brain-active")) {
       brainIcon.className += " fa-brain-active";
     }
     // clear all classes
@@ -81,25 +99,7 @@ document.addEventListener("scroll", () => {
     chatIcon.className = "bi-chat-dots-fill h1";
     brushIcon.className = "bi-brush-fill h1";
     envelopeIcon.className = "bi-envelope-fill h1";
-  } else if (distFromTop > proficiencies && distFromTop <= softSkills) {
-    if (!proficienciesLink.className.includes("li-active")) {
-      proficienciesLink.className += " li-active";
-    }
-    if (!gearIcon.className.includes("bi-gear-wide-connected-active")) {
-      gearIcon.className += " bi-gear-wide-connected-active";
-    }
-    // clear all classes
-    homeLink.className = "home-link";
-    experienceLink.className = "experience-link";
-    softSkillsLink.className = "soft-skills-link";
-    portfolioLink.className = "portfolio-link";
-    contactLink.className = "contact-link";
-    homeIcon.className = "bi-house-door-fill h1";
-    brainIcon.className = "fas fa-brain h1";
-    chatIcon.className = "bi-chat-dots-fill h1";
-    brushIcon.className = "bi-brush-fill h1";
-    envelopeIcon.className = "bi-envelope-fill h1";
-  } else if (distFromTop > softSkills && distFromTop <= portfolio) {
+  } else if (distFromTop > softSkills && distFromTop <= proficiencies) {
     if (!softSkillsLink.className.includes("li-active")) {
       softSkillsLink.className += " li-active";
     }
@@ -117,22 +117,22 @@ document.addEventListener("scroll", () => {
     gearIcon.className = "bi-gear-wide-connected h1";
     brushIcon.className = "bi-brush-fill h1";
     envelopeIcon.className = "bi-envelope-fill h1";
-  } else if (distFromTop > portfolio && distFromTop <= contact) {
-    if (!portfolioLink.className.includes("li-active")) {
-      portfolioLink.className += " li-active";
+  } else if (distFromTop > proficiencies && distFromTop <= contact) {
+    if (!proficienciesLink.className.includes("li-active")) {
+      proficienciesLink.className += " li-active";
     }
-    if (!brushIcon.className.includes("bi-brush-fill-active")) {
-      brushIcon.className += " bi-brush-fill-active";
+    if (!gearIcon.className.includes("bi-gear-wide-connected-active")) {
+      gearIcon.className += " bi-gear-wide-connected-active";
     }
     // clear all classes
     homeLink.className = "home-link";
     experienceLink.className = "experience-link";
-    proficienciesLink.className = "proficiencies-link";
+    portfolioLink.className = "portfolio-link";
     softSkillsLink.className = "soft-skills-link";
     contactLink.className = "contact-link";
     homeIcon.className = "bi-house-door-fill h1";
     brainIcon.className = "fas fa-brain h1";
-    gearIcon.className = "bi-gear-wide-connected h1";
+    brushIcon.className = "bi-brush-fill h1";
     chatIcon.className = "bi-chat-dots-fill h1";
     envelopeIcon.className = "bi-envelope-fill h1";
   } else {
