@@ -245,13 +245,19 @@ aside {
   border-radius: 0.25rem;
   width: 25rem;
 }
+.skill-icons {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  padding: 1rem;
+}
 
 .library-icon {
   font-size: 4.5rem;
 }
 
 .tab-link {
-  width: 50%;
+  width: 33.33333%;
 }
 .tab {
   overflow: hidden;
