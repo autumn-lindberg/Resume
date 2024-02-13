@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <script src="./script.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
     <!-- get google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,7 +42,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link href="./style.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="./profile.jpeg" />
+    <link rel="icon" type="image/svg+xml" href="./smile.png" />
     <title>Autumn Lindberg Resume</title>
   </head>
   <body>
@@ -54,15 +54,19 @@
           <div class="hero-banner home-banner d-flex flex-column">
             <div class="d-flex">
               <div class="image-box">
-                <img src="profile.jpeg" alt="profile photo" class="profile" />
+                <img
+                  src="./img/profile_6.png"
+                  alt="profile photo"
+                  class="profile"
+                />
               </div>
-              <p>
+              <p class="mb-0">
                 Hard working, dedicated, and passionate about their craft.
                 Autumn thrives on being challenged, and relishes every step of
                 the development process.
               </p>
             </div>
-            <a href="#portfolio" class="h1 scroll-arrow">
+            <a href="#portfolio" class="h1 scroll-arrow scroll-down">
               <i class="bi-chevron-compact-down scroll-down"></i>
             </a>
           </div>
@@ -100,7 +104,7 @@
                   data-bs-interval="5000"
                 >
                   <img
-                    src="./vidly-darkened.png"
+                    src="./img/vidly-darkened.png"
                     class="d-block w-100"
                     alt="vidly"
                   />
@@ -121,7 +125,7 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
                   <img
-                    src="./pdx-label-co-darkened.png"
+                    src="./img/pdx-label-co-darkened.png"
                     class="d-block w-100"
                     alt="label-co"
                   />
@@ -313,7 +317,7 @@
             <div class="job">
               <div class="job-info">
                 <div class="text-center skill-icons">
-                  <img src="./git.png" alt="git" class="p-4" />
+                  <img src="./img/git.png" alt="git" class="p-4" />
                 </div>
                 <h3 class="role text-center">Git</h3>
                 <p>
@@ -326,7 +330,7 @@
             <div class="job">
               <div class="job-info">
                 <div class="text-center skill-icons">
-                  <img src="./docker.png" alt="docker" class="p-4" />
+                  <img src="./img/docker.png" alt="docker" class="p-4" />
                 </div>
                 <h3 class="role text-center">Docker</h3>
                 <p>
@@ -340,7 +344,7 @@
               <div class="job-info">
                 <div class="text-center skill-icons">
                   <img
-                    src="./data-structure.png"
+                    src="./img/data-structure.png"
                     alt="data structures"
                     class="p-4"
                   />
@@ -353,10 +357,11 @@
               </div>
             </div>
 
+            <!--
             <div class="job">
               <div class="job-info">
                 <div class="text-center skill-icons">
-                  <img src="next.png" alt="next.js" class="p-4" />
+                  <img src="./img/next.png" alt="next.js" class="p-4" />
                 </div>
                 <h3 class="role text-center">Next.js</h3>
                 <p>
@@ -370,7 +375,7 @@
             <div class="job">
               <div class="job-info">
                 <div class="text-center skill-icons">
-                  <img src="cicd.png" alt="CICD" class="p-4" />
+                  <img src="./img/cicd.png" alt="CICD" class="p-4" />
                 </div>
                 <h3 class="role text-center">CI/CD</h3>
                 <p>
@@ -379,11 +384,12 @@
                 </p>
               </div>
             </div>
+-->
 
             <div class="job">
               <div class="job-info">
                 <div class="text-center skill-icons">
-                  <img src="mern.png" alt="MERN stack" class="" />
+                  <img src="./img/mern.png" alt="MERN stack" class="" />
                 </div>
                 <h3 class="role text-center">MERN Stack</h3>
                 <p>
@@ -396,7 +402,7 @@
             <div class="job">
               <div class="job-info">
                 <div class="text-center skill-icons">
-                  <img src="bootstrap.png" alt="bootstrap" class="p-3" />
+                  <img src="./img/bootstrap.png" alt="bootstrap" class="p-3" />
                 </div>
                 <h3 class="role text-center">Bootstrap</h3>
                 <p>
@@ -409,7 +415,7 @@
             <div class="job">
               <div class="job-info">
                 <div class="text-center skill-icons">
-                  <img src="php.png" alt="PHP" class="" />
+                  <img src="./img/php.png" alt="PHP" class="" />
                 </div>
                 <h3 class="role text-center">PHP</h3>
                 <p>
@@ -566,7 +572,7 @@
     <script
       data-cfasync="false"
       type="text/javascript"
-      src="form-submission-handler.js"
+      src="./scripts/form-submission-handler.js"
     ></script>
   </body>
 </html>
